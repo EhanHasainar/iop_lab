@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int main()
+{
+	int i, num, x=0;
+	
+	printf("Enter a number: ");
+	scanf("%d", &num);
+	
+	if (num%2!=0)
+	{
+		x = 1;
+	}
+	
+	for (i=1; i<=(num+x)/2; i++)
+	{
+		if (num%i==0)
+		{
+			printf("%d ", i);
+		}
+	}
+	
+	printf("%d ", num);
+	
+	return 0;
+}
